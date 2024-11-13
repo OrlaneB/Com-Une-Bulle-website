@@ -1,0 +1,26 @@
+#Footer {
+    background-color: #91CFCF;
+    width:100%;
+    margin-left: -10%;
+    padding: 0 10%;
+
+}
+
+#Footer #before {
+    background-color: #1D909E;
+    width:100%;
+    margin-left: -10%;
+    padding: 10px 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Footer #after {
+    padding: 30px 0;
+}
+
+#Footer #after img {
+    width:300px;
+}

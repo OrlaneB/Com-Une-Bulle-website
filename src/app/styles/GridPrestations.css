@@ -1,0 +1,34 @@
+#GridPrestations {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    width:60%;
+    gap:8px;
+    align-items: center;
+    left:-400px;
+    transition: left 0.5s ease-in-out;
+}
+
+
+#GridPrestations:hover {
+    left: -100px;
+}
+
+
+#PrestationBlock {
+    background-image: url("/images/bgP.png");
+    background-position: center;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+
+    padding: 14px;
+    grid-column-start: span 2;
+}
+
+
+
+#PrestationBlock p, #PrestationBlock h4 {
+    margin: 0;
+    font-size: 0.8em;
+    color: white;
+}

@@ -1,22 +1,158 @@
+/* GLOBAL */
+body {
+  padding: 0px 80px;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+:root {
+  margin: 0;
+  padding: 0;
+}
+
+/* IMAGES */
+img.round {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1;
+}
+
+
+/* TEXTS */
+h1 {
+  font-family: "FiraSans";
+  font-weight: 300;
+  color: #ED6D55 ;
+}
+
+h2 {
+  font-family: "Times New Roman";
+  font-weight: 700;
+  color: #ED6D55;
+}
+
+h3 {
+  font-family: "Times New Roman";
+  font-weight: 400;
+  color: #1D909E;
+}
+
+h4 {
+  font-family: "FiraSans";
+  font-weight: 700;
+  color: black;
+}
+
+p {
+  font-family: "FiraSans";
+  font-weight: 300;
+  color: black;
+}
+
+p.blue {
+  color: #1D909E;
+}
+
+p.white {
+  color: white;
+}
+
+/* NAV */
+nav p:hover {
+  font-weight: 400;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+/* BUTTONS */
+
+button {
+  color: white;
+  font-family: "FiraSans";
+  font-weight: 400;
+  border: 1px solid #1D909E;
+  padding: 8px;
+  cursor: pointer;
+}
+
+button.pink {
+  background-color: #ED6D55;
+  border-color: #ED6D55;
+}
+
+button.blue {
+  background-color: #1D909E;
+}
+
+button.pink:hover {
+  color: #ED6D55;
+  background-color: transparent;
+}
+
+button.blue:hover {
+  color: #1D909E;
+  background-color: transparent;
+}
+
+button.grey {
+  background-color: #d9d9d9;
+  color: black;
+  border: 1px solid #d9d9d9;
+}
+
+button.grey:hover {
+  border-color: #1D909E;
+}
+
+button.border {
+  color: white;
+  background-color: transparent;
+  border:1px solid white;
+}
+
+button.border:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+button.round {
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+button.round:hover {
+  background-color: #91CFCF;
+  border-color: #91CFCF;
+}
+
+
+
 /* FONTS */
 
 @font-face {
   font-family: "FiraSans";
-  src: url("./fonts/FiraSans-Regular.ttf") format("ttf");
+  src: url("/fonts/FiraSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "FiraSans";
-  src: url("./fonts/FiraSans-Light.ttf") format("ttf");
+  src: url("/fonts/FiraSans-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "FiraSans";
-  src: url("./fonts/FiraSans-Bold.ttf") format("ttf");
+  src: url("/fonts/FiraSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }

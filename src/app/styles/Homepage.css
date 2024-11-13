@@ -1,0 +1,41 @@
+#Homepage #intro {
+    text-align: right;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 250px;
+}
+
+#Homepage #services {
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    align-items: center;
+}
+
+#Homepage #services div {
+    padding:60px;
+}
+
+#Homepage #services img {
+    width: 60%;
+    height:400px;
+    object-fit: cover;
+}
+
+#Homepage #reseau {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    text-align: right;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+
+}
+
+#Homepage #reseau img {
+    width: 30%;
+}
+
+#Homepage #reseau div{
+    width:40%;
+}
