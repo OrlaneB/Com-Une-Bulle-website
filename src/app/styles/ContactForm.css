@@ -1,0 +1,40 @@
+#ContactForm {
+    display: grid;
+    grid-template-columns: 2;
+    text-align: center;
+    gap:10px;
+    width: 35%;
+}
+
+#ContactForm select, #ContactForm div, #ContactForm textarea {
+    grid-column: 1/ span 2;
+}
+
+#ContactForm textarea {
+    height:100px;
+    resize: vertical;
+    min-height: 150px;
+    max-height: 300px;
+}
+
+#ContactForm select, #ContactForm input, #ContactForm textarea {
+    padding: 6px;
+    background-color: white;
+    border-radius: 3px;
+    border: 2px solid white;
+    font-family: "FiraSans";
+    font-weight: 300;
+}
+
+#ContactForm input:focus, #ContactForm textarea:focus, #ContactForm select:focus{
+    outline-color: #ED6D55;
+}
+
+/* #ContactForm select:focus {
+    text-decoration: underline;
+    text-decoration-color: #ED6D55;
+} */
+
+#ContactForm button {
+    width: fit-content;
+}

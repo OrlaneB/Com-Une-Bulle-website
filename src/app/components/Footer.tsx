@@ -18,9 +18,15 @@ export default function Footer({}: Props) {
             </nav>
 
             <div>
-                <button className='round'>I</button>
-                <button className='round'>L</button>
-                <button className='round'>N</button>
+                <button className='round' name='Lien Facebook'>
+                    <img src='/icones/facebook_icone.png' alt='Icone Facebook' />
+                </button>
+                <button className='round' name='Lien Instagram'>
+                    <img src='/icones/instagram_icone.png' alt='Icone Instagram'/>
+                </button>
+                <button className='round' name='Lien Linkedin'>
+                    <img src='/icones/linkedin_icone.png' alt='Icone Linkedin' />
+                </button>
             </div>
         </div>
 
