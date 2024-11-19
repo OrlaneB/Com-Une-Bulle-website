@@ -7,6 +7,7 @@
     align-items: center;
     left:-400px;
     transition: left 0.5s ease-in-out;
+    margin: -10vh;
 }
 
 

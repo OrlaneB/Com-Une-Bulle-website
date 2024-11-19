@@ -11,8 +11,8 @@ export default function GridPrestations({}: Props) {
 
   return (
     <div id="GridPrestations">
-        {dumPrestation.map(p=>(
-            <BlockPrestation p={p}/>
+        {dumPrestation.map((p,index)=>(
+            <BlockPrestation p={p} key={index}/>
         ))}
         <div style={{gridArea:"1 / 8 / span 1 / span 2"}}></div>
         <div style={{gridArea:"1 / 10 / span 1 / span 2"}}></div>

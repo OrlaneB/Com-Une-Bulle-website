@@ -1,18 +1,15 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
-import Header from "./components/Header";
 import Newsletter from "./components/Newsletter";
 
 import "./globals.css"
 import "./styles/Homepage.css"
 import GridPrestations from "./components/GridPrestations";
-import Footer from "./components/Footer";
 
 export default function Home() {
   return (
     <div id="Homepage">
-      <Header />
 
       <GridPrestations />
 
@@ -45,7 +42,6 @@ export default function Home() {
         </div>
       </div>
 
-      <Footer />
       
     </div>
   );

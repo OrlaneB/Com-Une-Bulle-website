@@ -1,0 +1,27 @@
+#FilterTools #searchBar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#FilterTools #buttons {
+    display: flex;
+    gap: 8px;
+}
+
+
+#FilterTools #research{
+    padding: 7.5px;
+    width: 300px;
+    outline-color: #1D909E;
+    border:1px solid #1D909E;
+    border-radius: 0;
+}
+
+#FilterTools #research:focus{
+    border-radius: 0;
+}
+
+#FilterTools label input{
+    margin : 15px 0;
+}

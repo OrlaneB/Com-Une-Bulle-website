@@ -1,19 +1,8 @@
 import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import "./globals.css";
-
-//This creates variables for fonts
-
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Com'Une Bulle",
@@ -28,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,0 +1,59 @@
+#GridTools {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:40px;
+    margin:60px 0; 
+}
+
+#GridTools .toolContainer {
+   width: calc(100%-10px);
+   aspect-ratio: 1;
+
+   background-position: center;
+   background-size: cover;
+   background-color: rgb(232, 232, 232);
+   background-repeat: no-repeat;
+   border-radius: 10px;
+
+   transform: scale(1);
+    transition: transform .2s ease-in-out;
+   border:5px solid white;
+}
+
+#GridTools .toolContainer:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+#GridTools .textContainer {
+    width:88%;
+    position: relative;
+    left:3%;
+    top: 65%;
+    background-color: rgba(255, 255, 255, 0.81);
+    padding: 3%;
+    border-radius: 5px;
+}
+
+#GridTools p, #GridTools h5 {
+    margin: 2px 0;
+}
+
+
+#GridTools .logoContainer {
+    background-color: white;
+    width:15%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    left : 82%;
+    top:3%;
+}
+
+#GridTools .logoContainer img {
+    width: 60%;
+    position: relative;
+    top:20%;
+    left: 20%;
+    transform: rotate(-5deg);
+}

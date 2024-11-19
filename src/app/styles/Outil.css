@@ -1,0 +1,12 @@
+#Outil #intro {
+    display: flex;
+    gap:100px;
+    align-items: center;
+}
+
+#Outil #intro img {
+    width:40%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}
