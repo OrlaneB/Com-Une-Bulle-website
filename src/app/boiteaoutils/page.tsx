@@ -10,6 +10,8 @@ import { dumTools } from '../dummyUtilities/dumTools'
 import Newsletter from '../components/Newsletter';
 
 import "../styles/BoiteAOutils.css"
+import "../styles/GridTools.css"
+import ToolBlock from '../components/ToolBlock';
 
 type Props = {}
 
@@ -31,7 +33,11 @@ export default function BoiteAOutils({}: Props) {
 
         <FilterTools tools={tools} chosenTag={chosenTag} />
 
-        <GridTools tools={tools}/>
+        <div id='GridTools'>
+          {tools && tools.map(t=>(
+            <ToolBlock tool={t} key={t.id}/>
+          ))}
+        </div>
 
         <div>
           <h2>Ce que nos clients en pensent</h2>
