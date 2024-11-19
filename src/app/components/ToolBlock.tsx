@@ -1,6 +1,7 @@
 import React from 'react'
 import Tool from '../utilities/classTool'
 import { useRouter } from 'next/navigation'
+import "../styles/ToolBlock.css"
 
 type Props = {
   tool:Tool
@@ -18,7 +19,11 @@ export default function ToolBlock({tool}: Props) {
   }
 
   return (
-    <div key={tool.name} style={{backgroundImage:`url(${tool.mainImage})`}} className='toolContainer' onClick={()=>router.push(`/outil/${tool.id}`)}>
+    <div key={tool.name} 
+    style={{backgroundImage:`url(${tool.mainImage})`}} 
+    // className='toolContainer' 
+    onClick={()=>router.push(`/outil/${tool.id}`)}
+    id='ToolBlock'>
 
               <div className='logoContainer'>
                 <img src={`/toolImages/creator/${getImageCreator(tool.creator)}.png`} />

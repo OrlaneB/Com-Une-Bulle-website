@@ -3,14 +3,13 @@ import React, { useState } from 'react'
 
 
 import FilterTools from '../components/FilterTools'
-import GridTools from '../components/GridTools';
 
 import Tool from '../utilities/classTool'
 import { dumTools } from '../dummyUtilities/dumTools'
 import Newsletter from '../components/Newsletter';
 
 import "../styles/BoiteAOutils.css"
-import "../styles/GridTools.css"
+import "../styles/ToolBlock.css"
 import ToolBlock from '../components/ToolBlock';
 
 type Props = {}

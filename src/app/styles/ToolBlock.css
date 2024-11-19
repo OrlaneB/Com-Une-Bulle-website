@@ -5,7 +5,7 @@
     margin:60px 0; 
 }
 
-#GridTools .toolContainer {
+#ToolBlock {
    width: calc(100%-10px);
    aspect-ratio: 1;
 
@@ -20,12 +20,12 @@
    border:5px solid white;
 }
 
-#GridTools .toolContainer:hover {
+#ToolBlock:hover {
     transform: scale(1.03);
     cursor: pointer;
 }
 
-#GridTools .textContainer {
+#ToolBlock .textContainer {
     width:88%;
     position: relative;
     left:3%;
@@ -35,12 +35,12 @@
     border-radius: 5px;
 }
 
-#GridTools p, #GridTools h5 {
+#ToolBlock p, #ToolBlock h5 {
     margin: 2px 0;
 }
 
 
-#GridTools .logoContainer {
+#ToolBlock .logoContainer {
     background-color: white;
     width:15%;
     aspect-ratio: 1;
@@ -50,7 +50,7 @@
     top:3%;
 }
 
-#GridTools .logoContainer img {
+#ToolBlock .logoContainer img {
     width: 60%;
     position: relative;
     top:20%;

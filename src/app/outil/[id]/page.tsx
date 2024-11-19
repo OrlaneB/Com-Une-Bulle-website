@@ -7,6 +7,7 @@ import { dumTools } from '../../dummyUtilities/dumTools'
 import Tool from '../../utilities/classTool';
 
 import "../../styles/Outil.css"
+import ToolBlock from '@/app/components/ToolBlock';
 
 type Props = {}
 
@@ -27,7 +28,7 @@ export default function Outil({}: Props) {
         </div>
 
         <div id='intro'>
-          <img src={tool.mainImage} />
+          <ToolBlock tool={tool}/>
 
           <div>
             <h2>{tool.name}</h2>
