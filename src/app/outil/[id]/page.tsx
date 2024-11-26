@@ -8,6 +8,7 @@ import Tool from '../../utilities/classTool';
 
 import "../../styles/Outil.css"
 import ToolBlock from '@/app/components/ToolBlock';
+import Newsletter from '@/app/components/Newsletter';
 
 type Props = {}
 
@@ -38,6 +39,23 @@ export default function Outil({}: Props) {
           </div>
 
         </div>
+
+
+        <p>...All description of tool will go there...</p>
+
+        <h2>Ce que nos clients en pensent</h2>
+        <div style={{backgroundColor:"grey",width:"100%",height:"150px"}}>Google Avis</div>
+
+        <Newsletter />
+
+        <div id='linkToServices'>
+          <h2>Plutôt besoin d'un service sur-mesure ?</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatem unde veniam molestias, ipsam pariatur incidunt qui rem alias minus explicabo eum, aliquam corporis esse quos, maxime dolor cupiditate suscipit.</p>
+          <button className='blue'>Services</button>
+          <button className='pink' style={{marginLeft:"15px"}}>Contact</button>
+        </div>
+
+        
         
       </div>}
     </>
