@@ -32,3 +32,8 @@
 #Footer #after img {
     width:300px;
 }
+
+#Footer .onPage {
+    font-weight: bold;
+    text-decoration: underline;
+}

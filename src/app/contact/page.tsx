@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import ContactForm from '../components/ContactForm'
 
@@ -6,6 +7,12 @@ import "../styles/Contact.css"
 type Props = {}
 
 export default function Contact({}: Props) {
+
+    const socialMedia = [{name:"instagram",link:"https://www.instagram.com/com_une_bulle_by_marie_flahaut/"},
+        {name:"facebook",link:"https://www.facebook.com/com.une.bulle.by.marie.flahaut?locale=fr_FR"},
+        {name:"linkedin",link:"https://www.linkedin.com/in/marie-flahaut-541329aa/"}
+    ]
+
   return (
     <div id='Contact'>
         <div>
@@ -17,15 +24,15 @@ export default function Contact({}: Props) {
             </p>
 
             <div id='socialMedia'>
-                <button className='round' name='Lien Facebook'>
-                    <img src='/icones/facebook_icone.png' alt='Icone Facebook' />
-                </button>
-                <button className='round' name='Lien Instagram'>
-                    <img src='/icones/instagram_icone.png' alt='Icone Instagram'/>
-                </button>
-                <button className='round' name='Lien Linkedin'>
-                    <img src='/icones/linkedin_icone.png' alt='Icone Linkedin' />
-                </button>
+            {socialMedia.map((item,index)=>(
+                    <button key={index} 
+                    className='round'
+                    name={`Lien ${item.name}`}
+                    onClick={(event)=>{event.preventDefault(); 
+                        window.open(item.link, "_blank", "noopener,noreferrer");}}>
+                        <img src={`/icones/${item.name}_icone.png`} alt={`Icone ${item.name}`}/>
+                    </button>
+                ))}
             </div>
 
             <div style={{backgroundColor:"lightgray",height:"200px",width:"150%"}}>

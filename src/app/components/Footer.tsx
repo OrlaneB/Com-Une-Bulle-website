@@ -1,4 +1,7 @@
-import React from 'react'
+"use client";
+import React, {useEffect,useState} from 'react'
+import { useRouter, usePathname } from 'next/navigation'
+
 
 import "../styles/Footer.css"
 import ContactForm from './ContactForm'
@@ -6,27 +9,50 @@ import ContactForm from './ContactForm'
 type Props = {}
 
 export default function Footer({}: Props) {
+
+    const router = useRouter();
+  const pathname = usePathname();
+
+  const [currentPage,setCurrentpage]=useState<string>("/");
+
+  const pages = [{name:"Services",link:""},
+                {name:"Boîte à outils", link:"/boiteaoutils"},
+                {name:"L'agence", link:"/agence"},
+                {name:"Réseau membres", link:""},
+                {name:"Contact", link:"/contact"}]
+
+    const socialMedia = [{name:"instagram",link:"https://www.instagram.com/com_une_bulle_by_marie_flahaut/"},
+        {name:"facebook",link:"https://www.facebook.com/com.une.bulle.by.marie.flahaut?locale=fr_FR"},
+        {name:"linkedin",link:"https://www.linkedin.com/in/marie-flahaut-541329aa/"}
+    ];
+
+  useEffect(()=>{
+    setCurrentpage(pathname)
+  },[pathname])
+
   return (
     <div id='Footer'>
         <div id='before'>
             <nav>
-            <p className='white'>Services</p>
-            <p className='white'>Boîte à outils</p>
-            <p className='white'>L'agence</p>
-            <p className='white'>Réseau membres</p>
-            <p className='white'>Contact</p>
+                {pages.map((p,index)=>(
+                    <p className={currentPage===p.link?"white onPage":"white"}
+                    key={index}
+                    onClick={()=>router.push(p.link)}
+                    >{p.name}</p>
+                ))}
             </nav>
 
             <div>
-                <button className='round' name='Lien Facebook'>
-                    <img src='/icones/facebook_icone.png' alt='Icone Facebook' />
-                </button>
-                <button className='round' name='Lien Instagram'>
-                    <img src='/icones/instagram_icone.png' alt='Icone Instagram'/>
-                </button>
-                <button className='round' name='Lien Linkedin'>
-                    <img src='/icones/linkedin_icone.png' alt='Icone Linkedin' />
-                </button>
+                {socialMedia.map((item,index)=>(
+                    <button key={index} 
+                    className='round'
+                    name={`Lien ${item.name}`}
+                    onClick={(event)=>{event.preventDefault(); 
+                        window.open(item.link, "_blank", "noopener,noreferrer");}}>
+                        <img src={`/icones/${item.name}_icone.png`} alt={`Icone ${item.name}`}/>
+                    </button>
+                ))}
+                
             </div>
         </div>
 

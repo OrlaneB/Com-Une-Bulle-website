@@ -8,7 +8,16 @@
     width:150px;
 } */
 
+#Header #logo {
+    cursor: pointer;
+}
+
 nav {
     display: flex;
     gap:15px;
+}
+
+#Header .onPage {
+    font-weight: bold;
+    text-decoration: underline;
 }
