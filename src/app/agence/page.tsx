@@ -14,7 +14,7 @@ type Props = {}
 
 export default function Agence({}: Props) {
 
-    const [selectedPrestation,setSelectedPrestation]=useState<Prestation|null>(null)
+    const [selectedPrestation,setSelectedPrestation]=useState<Prestation|null>(dumPrestation[0])
 
 
   return (
@@ -56,7 +56,7 @@ export default function Agence({}: Props) {
                     {selectedPrestation.intro}
                 </p>
 
-                <h5>Le retour de Julien</h5>
+                <h5>Le retour de {selectedPrestation.client.split(",")[0]}</h5>
 
                 <div id='clientReview'>
                     <p>
