@@ -22,7 +22,7 @@
     background-size:100% 100%;
     background-repeat: no-repeat;
 
-    padding: 14px;
+    padding: 20px 20px;
     grid-column-start: span 2;
 }
 
@@ -31,5 +31,8 @@
 #PrestationBlock p, #PrestationBlock h4 {
     margin: 0;
     font-size: 0.8em;
-    color: white;
+}
+
+#PrestationBlock h4 {
+    font-weight: bold;
 }

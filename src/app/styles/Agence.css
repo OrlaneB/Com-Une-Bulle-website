@@ -1,0 +1,31 @@
+#Agence #intro #smallPrestationGrid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+}
+
+#Agence #intro {
+    display: flex;
+    margin:100px 0;
+}
+
+#Agence #prestationGridContainer {
+    flex: 1;
+    padding-right: 250px;
+}
+
+#Agence #PrestationBlock {
+    grid-column-start: span 1;
+    cursor: pointer;
+}
+
+#Agence #intro #selectedPrestation {
+    flex:1;
+}
+
+#Agence #intro img {
+    width:100px;
+    height: 100px;
+    position:absolute;
+    right:90px;
+}
