@@ -6,7 +6,7 @@
 
 #Agence #intro {
     display: flex;
-    margin:100px 0;
+    margin : 20px 0;
 }
 
 #Agence #prestationGridContainer {
@@ -28,4 +28,54 @@
     height: 100px;
     position:absolute;
     right:90px;
+}
+
+#Agence #intro #selectedPrestation #clientReview {
+    background-color: #F6F6F6;
+    border:1px solid grey;
+    padding : 0 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-bottom: 30px;
+}
+
+
+#Agence #team {
+    display: flex;
+    width:80%;
+    gap:10%;
+    margin:150px auto;
+    align-items: center;
+}
+
+#Agence #team img {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: left;
+    width:35%;
+}
+
+#Agence #workWithUs {
+    display: flex;
+    align-items: stretch;
+    gap:200px;
+    margin: 150px 0;
+}
+
+#Agence #workWithUs #h3blocks {
+    display: flex;
+    justify-content: stretch;
+    gap:5%;
+}
+
+#Agence #workWithUs #h3blocks div {
+    border:2px solid #1D909E;
+    border-radius: 15px;
+    width:30%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 }

@@ -6,7 +6,7 @@ export default class Prestation {
     intro:string;
     review:string;
     
-    constructor(type:string,client:string,preview:string, sector:string="", intro:string="", review:string="") {
+    constructor(type:string,client:string,preview:string, intro:string="", review:string="",sector:string="") {
         this.type=type;
         this.client=client;
         this.preview=preview;
