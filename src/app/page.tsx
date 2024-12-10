@@ -1,23 +1,29 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
 import Newsletter from "./components/Newsletter";
 
 import "./globals.css"
 import "./styles/Homepage.css"
 import GridPrestations from "./components/GridPrestations";
+import GridPrestationsMobile from "./components/GridPrestationsMobile";
 
 export default function Home() {
   return (
     <div id="Homepage">
 
+      <div className="onlyDesktop">
       <GridPrestations />
+      </div>
 
-      <div id="intro">
+      <div id="intro" className="onlyDesktop">
         <h1>L'agence qui fait <br/> éclore ton business</h1>
         <p>Communication - Administratif - Réseau de professionnels</p>
         <button className="pink">Découvre comment je peux t'aider</button>
       </div>
+
+      <div className="onlyMobile">
+        <GridPrestationsMobile />
+      </div>
+
+      <button className="pink onlyMobile" style={{margin:" 130px auto"}}>Découvre comment je peux t'aider</button>
 
       <div id="services">
         <div>
