@@ -53,8 +53,16 @@ export default function Header({}: Props) {
         </nav>}
        
         <img src='/logo/1LS.png' alt='logo principal' 
-        id='logo'
+        id='logo' className='onlyDesktop'
         onClick={()=>router.push("/")}/>
+
+        {currentPage==="/" && <img src='/logo/1LS.png' alt='logo principal' 
+        id='logo' className='onlyMobile'
+        onClick={()=>router.push("/")}/>}
+
+        {currentPage!=="/" && <img src='/logo/1LB.png' alt='logo principal' id='smallLogo' className='onlyMobile'
+        onClick={()=>router.push("/")}
+        />}
 
         <nav className='onlyDesktop'>
           {pages.map((p,index)=>(
