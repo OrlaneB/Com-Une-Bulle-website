@@ -42,7 +42,7 @@ export default function Home() {
 
         <div>
           <h2>Une communauté, un réseau</h2>
-          <p>L’agence Com’Une Bulle, c’est un accès à un réseau de professionnels garantis et approuvés  pour faire grandir ton entreprise en confiance.C’est aussi une communauté d’entrepreneurs  qui se soutiennent pour faire évoluer ton réseau de clients et de partenaires.</p>
+          <p className="onlyDesktop">L’agence Com’Une Bulle, c’est un accès à un réseau de professionnels garantis et approuvés  pour faire grandir ton entreprise en confiance.C’est aussi une communauté d’entrepreneurs  qui se soutiennent pour faire évoluer ton réseau de clients et de partenaires.</p>
           <button className="blue">Réseau membre</button>
           <button className="pink" style={{marginLeft:"15px"}}>Contact</button>
         </div>
