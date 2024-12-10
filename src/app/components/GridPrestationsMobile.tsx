@@ -16,7 +16,7 @@ export default function GridPrestationsMobile({}: Props) {
                 <BlockPrestation key={index} p={p} selected={false} />
             ))}
         </div>
-        <div className='row' style={{transform:"translateX(-50%)"}}>
+        <div className='row'>
             {dumPrestation.slice(3,6).map((p,index)=>(
                 <BlockPrestation key={index} p={p} selected={false} />
             ))}
