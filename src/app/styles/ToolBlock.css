@@ -5,9 +5,25 @@
     margin:60px 0; 
 }
 
+@media screen and (max-width:768px) {
+    #GridTools {
+        display: block;
+    }
+
+    #GridTools #ToolBlock {
+        margin-bottom: 30px;
+    }
+
+    #GridTools #ToolBlock .logoContainer {
+        width:20%;
+    }
+
+}
+
 #ToolBlock {
    width: calc(100%-10px);
    aspect-ratio: 1;
+   position: relative;
 
    background-position: center;
    background-size: cover;
@@ -27,9 +43,9 @@
 
 #ToolBlock .textContainer {
     width:88%;
-    position: relative;
+    position: absolute;
     left:3%;
-    top: 65%;
+    bottom: 10px;
     background-color: rgba(255, 255, 255, 0.81);
     padding: 3%;
     border-radius: 5px;
@@ -45,15 +61,16 @@
     width:15%;
     aspect-ratio: 1;
     border-radius: 50%;
-    position: relative;
-    left : 82%;
+    position: absolute;
+    right:3%;
     top:3%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #ToolBlock .logoContainer img {
     width: 60%;
-    position: relative;
-    top:20%;
-    left: 20%;
     transform: rotate(-5deg);
 }

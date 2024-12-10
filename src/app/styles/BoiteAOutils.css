@@ -4,3 +4,22 @@
     text-align: center;
     margin-bottom: 100px;
 }
+
+#BoiteAOutils #intro {
+    width: 45%;
+}
+
+@media screen and (max-width:768px) {
+    #BoiteAOutils {
+        text-align: center;
+    }
+
+    #BoiteAOutils #intro {
+        width: 100%;
+    }
+
+    #BoiteAOutils #linkToServices {
+        width:100%;
+    }
+
+}

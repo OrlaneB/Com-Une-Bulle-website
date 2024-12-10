@@ -27,7 +27,7 @@ export default function BoiteAOutils({}: Props) {
         <div>
             <h1>La boîte à outils <br/>Com'Une Bulle & company</h1>
             <h4>Pour te former, gagner du temps, trouver une solution...</h4>
-            <p style={{width:"45%"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p id='intro'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
 
         <FilterTools tools={tools} chosenTag={chosenTag} />
