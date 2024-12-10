@@ -10,6 +10,12 @@ body {
   padding: 0;
 }
 
+@media screen and (max-width:768px) {
+  body {
+    padding: 0px 40px;
+  }
+}
+
 /* IMAGES */
 img.round {
   border-radius: 50%;
@@ -139,6 +145,21 @@ button.round:hover {
   border-color: #91CFCF;
 }
 
+/* RESPONSIVE RULES */
+
+.onlyMobile {
+  display: none;
+}
+
+@media screen and (max-width:768px){
+  .onlyMobile {
+    display: block;
+  }
+  .onlyDesktop {
+    display: none;
+  }
+}
+
 
 
 /* FONTS */
@@ -163,3 +184,5 @@ button.round:hover {
   font-weight: 700;
   font-style: normal;
 }
+
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css')
