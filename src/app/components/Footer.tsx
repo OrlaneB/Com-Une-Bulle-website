@@ -14,6 +14,7 @@ export default function Footer({}: Props) {
   const pathname = usePathname();
 
   const [currentPage,setCurrentpage]=useState<string>("/");
+  const [openedMobileNav,setOpenedMobileNav]=useState<boolean>(false);
 
   const pages = [{name:"Services",link:""},
                 {name:"Boîte à outils", link:"/boiteaoutils"},
@@ -33,7 +34,7 @@ export default function Footer({}: Props) {
   return (
     <div id='Footer'>
         <div id='before'>
-            <nav>
+            <nav className='onlyDesktop'>
                 {pages.map((p,index)=>(
                     <p className={currentPage===p.link?"white onPage":"white"}
                     key={index}
@@ -41,6 +42,14 @@ export default function Footer({}: Props) {
                     >{p.name}</p>
                 ))}
             </nav>
+
+            <div id='burger-menu-icon' className='onlyMobile' onClick={()=>setOpenedMobileNav(!openedMobileNav)}>
+                <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1H25" stroke="white"/>
+                    <path d="M1 11H25" stroke="white"/>
+                    <path d="M1 22H25" stroke="white"/>
+                </svg>
+            </div>
 
             <div>
                 {socialMedia.map((item,index)=>(
@@ -57,9 +66,17 @@ export default function Footer({}: Props) {
         </div>
 
         <div id='after'>
+            {openedMobileNav && <nav>
+                <p className='white' onClick={()=>{router.push("/"); setOpenedMobileNav(false)}} style={{borderTop:"none",paddingTop:"0"}}>Accueil</p>
+                {pages.map((p,index)=>(
+                    <p key={index} className='white'
+                        onClick={()=>router.push(p.link)}
+                    >{p.name}</p>
+                ))}
+                </nav>}
             <div>
                 <img src='/logo/LS-BLANC.png' />
-                <p>Libère ton temps, je révèle ton talent<br/><br/>Un projet, une question ?<br/>Envoies un message via le formulaire de contact</p>
+                <p className='onlyDesktop'>Libère ton temps, je révèle ton talent<br/><br/>Un projet, une question ?<br/>Envoies un message via le formulaire de contact</p>
             </div>
 
             <ContactForm />

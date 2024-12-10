@@ -39,3 +39,49 @@
     font-weight: bold;
     text-decoration: underline;
 }
+
+
+@media screen and (max-width:768px) {
+    #Footer {
+       padding:0 15%;
+       margin-left: -15%;
+    }
+
+    #Footer #before {
+        padding: 10px 15%;
+       margin-left: -15%;
+    }
+    #burger-menu-icon path{
+        stroke-width: 2;
+        stroke-linecap: round;
+    }
+
+    #Footer #after {
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+
+    #Footer #after nav {
+        position: absolute;
+        background-color: #1D909E;
+        display: block;
+        padding : 15px;
+        top:0;
+        text-align: center;
+    }
+
+    #Footer #after nav p {
+        border-top : 2px solid #ED6D55;
+        padding: 13px 0;
+        margin:0;
+    }
+
+    #Footer #after nav p {
+        cursor: pointer;
+    }
+
+    #Footer #after img {
+        margin-bottom: 50px;
+    }
+}
