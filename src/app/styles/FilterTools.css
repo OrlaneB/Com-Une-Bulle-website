@@ -25,3 +25,18 @@
 #FilterTools label input{
     margin : 15px 0;
 }
+
+@media screen and (max-width:768px) {
+    #FilterTools #searchBar{
+        display: block;
+    }
+
+    #FilterTools form {
+        display: flex;
+        margin-top: 15px;
+    }
+
+   #FilterTools #buttons {
+    flex-wrap: wrap;
+   }
+}
