@@ -19,6 +19,10 @@ export default function Contact({}: Props) {
             <h2>On en discute ?</h2>
             <h4>Réponse sous 2 jours ouvrés</h4>
 
+            <div className='onlyMobile contactFormContainer'>
+                <ContactForm />
+            </div>
+
             <p>
                 Retrouve Com’Une Bulle sur les réseaux sociaux et à son bureau.
             </p>
@@ -35,12 +39,14 @@ export default function Contact({}: Props) {
                 ))}
             </div>
 
-            <div style={{backgroundColor:"lightgray",height:"200px",width:"150%"}}>
+            <div style={{backgroundColor:"lightgray",height:"200px",width:"100%"}}>
                 Google Maps
             </div>
         </div>
 
-        <ContactForm />
+        <div className='onlyDesktop contactFormContainer'>
+            <ContactForm />
+        </div>
     </div>
   )
 }

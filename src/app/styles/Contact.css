@@ -1,12 +1,17 @@
 #Contact {
     display: flex;
+    gap:30px;
     justify-content: space-between;
     margin-bottom: 100px;
     align-items: center;
 }
 
+#Contact .contactFormContainer{
+    width: 50%;
+}
+
 #Contact #ContactForm {
-    width : 50%;
+    width: 100%;
 }
 
 #Contact #ContactForm textarea {
@@ -34,4 +39,14 @@
 
 #Contact .round:hover {
     border-color: #ED6D55;
+}
+
+@media screen and (max-width:768px){
+    #Contact {
+        text-align: center;
+    }
+    
+    #Contact .contactFormContainer {
+        margin:50px 0;
+    }
 }
