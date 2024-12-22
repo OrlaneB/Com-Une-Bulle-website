@@ -42,7 +42,7 @@ export default function Agence({}: Props) {
                 
             <div id='selectedPrestation'>
                 {selectedPrestation && <div>
-                <img src='/logo/LR-1.png' />
+                <img src='/logo/LR-1.png' className='onlyDesktop'/>
 
                 <h3 style={{fontWeight:"700",fontSize:"1.5em"}}>
                     {selectedPrestation.type}
@@ -109,7 +109,7 @@ export default function Agence({}: Props) {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
 
-                <button className='blue'>Je prends RDV</button>
+                <button className='pink'>Je prends RDV</button>
             </div>
 
             <div style={{backgroundColor:"lightgray",width:"100%"}}>

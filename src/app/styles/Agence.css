@@ -79,3 +79,82 @@
     align-items: center;
     font-weight: bold;
 }
+
+@media screen and (max-width:768px) {
+    #Agence {
+        text-align: center;
+    }
+    #Agence #intro {
+        display: block;
+    }
+
+    #Agence #prestationGridContainer {
+        width: 100%;
+    }
+
+    #Agence #intro #smallPrestationGrid {
+        display: flex;
+        gap:50px;
+        width:300%;
+        flex-wrap: nowrap;
+        overflow-x:scroll;
+        overflow-y: hidden;
+        margin-left: -10%;
+    }
+
+    #Agence #intro #smallPrestationGrid::-webkit-scrollbar{
+        height: 8px;
+    }
+
+    #Agence #intro #smallPrestationGrid * {
+        flex:0 0 auto;
+        width:200px;
+    }
+
+     #Agence #intro #selectedPrestation {
+        text-align: left;
+        padding:8%;
+        border: 1px solid lightgray;
+        border-radius: 5%;
+        margin-top: 30px;
+     }
+
+    #Agence #intro #selectedPrestation img {
+        width:60px;
+        height:60px;
+        right:40px;
+    }
+
+    #Agence #team {
+        display: block;
+        width:100%;
+        text-align: center;
+    }
+
+    #Agence #team img {
+        width:100%;
+        margin-bottom: 20px;
+    }
+
+    #Agence #workWithUs {
+        display: block;
+    }
+
+    #Agence #workWithUs div:first-child {
+        margin-bottom: 80px;
+    }
+
+
+    #Agence #workWithUs #h3blocks {
+        display: block;
+        text-align: center;
+    }
+
+    #Agence #workWithUs #h3blocks div {
+        width:80%;
+        margin: 20px auto;
+        aspect-ratio: 4/1;
+    }
+
+    
+}
