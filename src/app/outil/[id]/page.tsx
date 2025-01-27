@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 
 import { useParams } from 'next/navigation';
+import { useRouter } from 'next/navigation'
 
 import { dumTools } from '../../dummyUtilities/dumTools'
 import Tool from '../../utilities/classTool';
@@ -16,6 +17,8 @@ export default function Outil({}: Props) {
 
     const params = useParams();
     const id = Number(params.id);
+
+    const router = useRouter();
 
     const [tool,setTool]=useState<Tool>(dumTools[id]);
 
@@ -35,7 +38,10 @@ export default function Outil({}: Props) {
             <h2>{tool.name}</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rem blanditiis incidunt excepturi amet alias rerum porro sunt! Numquam, quos facere quidem officiis sunt ad eius itaque neque voluptas repellat!</p>
             <button className='pink' style={{marginRight:"15px"}}>Acheter</button>
-            <button className='blue'>Boîte à outils</button>
+            <button className='blue'
+              onClick={()=>router.push('/boiteaoutils')}>
+              Boîte à outils
+            </button>
           </div>
 
         </div>

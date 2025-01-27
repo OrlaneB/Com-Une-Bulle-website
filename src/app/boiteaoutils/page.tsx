@@ -19,7 +19,6 @@ export default function BoiteAOutils({}: Props) {
     //This will then come from backend
     const [tools,setTools]=useState<Tool[]>(dumTools);
 
-    const [chosenTag,setChosenTag]=useState<string>("Tous les outils");
 
   return (
     <div id='BoiteAOutils'>
@@ -30,7 +29,7 @@ export default function BoiteAOutils({}: Props) {
             <p id='intro'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
 
-        <FilterTools tools={tools} chosenTag={chosenTag} />
+        <FilterTools tools={tools} setTools={setTools}/>
 
         <div id='GridTools'>
           {tools && tools.map(t=>(
